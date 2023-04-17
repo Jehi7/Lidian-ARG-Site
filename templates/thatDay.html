@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/static/styles/fall.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De novo não</title>
+</head>
+<body>
+    <section>
+        <form action="/">
+            <div class="tv-container">
+                <h2>Não me mostre aquele segundo de novo</h2>
+            </div>
+
+            <label for="channel">Canal: </label>
+            <div>
+                <input id="channel" name="channel" type="range" min="1" max="50">
+                <p id="chValue">0</p>
+            </div>
+
+            <label for="vol">Volume: </label>
+            <div>
+                <input id="vol" name="vol" type="range" min="0" max="100">
+                <p id="volValue">0</p>
+            </div>
+    
+            <button class="tv-container" type="submit">Mudar canal</button>
+        </form>
+    </section>
+
+    <script>
+        vwidth = screen.width;
+        vheight = screen.height;
+
+        channelI = document.getElementById("channel");
+        volI = document.getElementById("vol");
+
+        channelO = document.getElementById("chValue");
+        volO = document.getElementById("volValue");
+
+        channelI.addEventListener('change', function (evt) {
+            channelO.innerHTML = channelI.value;
+        });
+
+        volI.addEventListener('change', function (evt) {
+            volO.innerHTML = volI.value;
+        });
+    </script>
+</body>
+</html>

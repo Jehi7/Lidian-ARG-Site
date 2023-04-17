@@ -1,0 +1,19 @@
+body {
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+
+#blinking {
+    width: 0;
+}
+
+#showing {
+    width: 2rem;
+    height: 2rem;
+
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+}

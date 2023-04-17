@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../imgs/aqueda_magrite.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    width: 40vw;
+
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border-color: #EFE9F4;
+    border-style: solid;
+    background-color: #08090C;
+}
+
+.tv-container {
+    background-color: #EFE9F4;
+    border-color: #08090C;
+    color: #08090C;
+}
