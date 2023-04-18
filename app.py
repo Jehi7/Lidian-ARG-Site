@@ -42,3 +42,14 @@ def hub():
             return render_template("carla.html")
 
     return render_template("who.html")
+
+@app.route("/broth3r")
+def brother():
+    return render_template("brother.html")
+
+@app.route("/extreme-cold")
+@app.route("/ruptura")
+@app.route("/retro")
+@app.route("/a-queda")
+def keys():
+    return render_template("keys.html")

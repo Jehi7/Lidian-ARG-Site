@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/static/styles/who.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
     <title>Pai... Eu...</title>
 </head>
 <body>
-    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RXZy8BbMz_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2 id="Me"></h2>
+
+    <script>
+        Me = document.getElementById("Me");
+
+        var typedMe = new Typed("#Me", {
+            strings: ["0:54 1:06 _ finale 7:40 2:25 4:47_ finale - Me deixa voltar. me deixa voltar. Eu ainda procuro sua lei. Eu ainda te procuro. Eu também te procuro. Esse processo nunca vai acabar… Está em constante /_____"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false,
+            loop: false,
+        })
+    </script>
 </body>
 </html>

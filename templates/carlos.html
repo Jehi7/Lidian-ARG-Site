@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>... Filho?</title>
+    <link href="/static/styles/who.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <title>Hello, my old heart</title>
 </head>
 <body>
-    
+    <h2 id="kim"></h2>
+    <h2 id="state"></h2>
+    <h2 id="you"></h2>
+
+    <script>
+        kim = document.getElementById("kim");
+
+        var typedKim = new Typed("#kim", {
+            strings: ["Kim… ? ^1000\n Eu te conhecia… ^500\n Eu queria voltar… ^500\n Queria conversar… ^700\n All that I loved I loved alone. ^250\n Don’t let me be alone again ^500\n 31 99979 2397"],
+            startDelay: 500,
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false,
+            loop: false,
+        })
+    </script>
 </body>
 </html>

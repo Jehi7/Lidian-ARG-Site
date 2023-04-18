@@ -4,3 +4,9 @@ body {
 
     font-family: 'Roboto Mono', monospace;
 }
+
+#nathan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
