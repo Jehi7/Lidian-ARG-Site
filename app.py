@@ -22,19 +22,23 @@ def who():
         if channelI == "13" and volI == "47":
             return render_template("who.html")
         return redirect("/aquele-dia")
+    
+    return render_template("who.html")
 
-@app.route("/hub", methods=["GET", "POST"])
+@app.route("/menu", methods=["GET", "POST"])
 def hub():
     if request.method == "POST":
         name = request.form.get("nome").capitalize()
 
         if name == "Carla" or name == "Maya" or name == "Sua mãe":
-            return
+            return render_template("carla.html")
         elif name == "Lidian" or name == "Rebecca" or name == "Becca" or name == "Seu pai":
-            return
+            return render_template("lidian.html")
         elif name == "Carlos" or name == "Kim":
-            return
+            return render_template("carlos.html")
         elif name == "Nathan" or name == "Bea" or name == "Beatrice" or name == "Seu irmão":
-            return
+            return render_template("nathan.html")
         elif name == "Você":
-            return
+            return render_template("carla.html")
+
+    return render_template("who.html")

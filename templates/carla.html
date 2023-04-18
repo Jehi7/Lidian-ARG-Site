@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="/static/styles/carla.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <title>Você me deixou... Desculpa</title>
+</head>
+<body>
+    <h2 id="love"></h2>
+    <h2 id="state"></h2>
+    <h2 id="you"></h2>
+
+    <script>
+        love = document.getElementById("love");
+        state = document.getElementById("state");
+        you = document.getElementById("you");
+
+        var typedLove = new Typed("#love", {
+            strings: ["Eu te amo.", "Eu te amava.", "Eu te amo."],
+            typeSpeed: 100,
+            backSpeed: 100,
+            showCursor: false,
+            loop: false,
+        })
+
+        setTimeout(()=>{
+            var typedState = new Typed("#state", {
+                strings: ["Você me abandonou. . .^500 Deixou ele fazer isso. . .^500 É hora de entrar. "],
+                typeSpeed: 100,
+                showCursor: false,
+                loop: false
+            })
+        }, 6000);
+
+        setTimeout(() => {
+            var typedYou = new Typed("#you", {
+                strings: ["Você é a /_______"],
+                typeSpeed: 100,
+                showCursor: false,
+                loop: false
+            })
+        }, 18000);
+
+    </script>
+</body>
+</html>

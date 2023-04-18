@@ -11,10 +11,40 @@
     <title>QUEM</title>
 </head>
 <body>
-    <form action="/hub" method="post">
-        <h1>COMO VOCÊ SABE. QUEM É VOCÊ?</h1>
-        <input type="text" name="nome" id="nome">
-        <button type="submit">RESPONDA</button>
+    <form action="/menu" method="post">
+        <h1 id="howA"></h1>
+        <h1 id="howB"></h1>
+        <div id="submit-container"></div>
+        <!-- <input type="text" name="nome" id="nome">
+        <button type="submit">RESPONDA</button> -->
     </form>
+
+    <script>
+        textA = document.getElementById("howA");
+        textB = document.getElementById("howB");
+        submit = document.getElementById("submit-container");
+
+        setTimeout(() => {
+            textA.innerHTML = "COMO"
+        }, 1000);
+        setTimeout(() => {
+            textA.innerHTML = "COMO VOCÊ"
+        }, 2000);
+        setTimeout(() => {
+            textA.innerHTML = "COMO VOCÊ SABE."
+        }, 3000);
+        setTimeout(() => {
+            textB.innerHTML = "QUEM"
+        }, 5000);
+        setTimeout(() => {
+            textB.innerHTML = "QUEM É"
+        }, 7000);
+        setTimeout(() => {
+            textB.innerHTML = "QUEM É VOCÊ?"
+        }, 9000);
+        setTimeout(() => {
+            submit.innerHTML = "<input type='text' name='nome' id='nome'> <button type='submit'>RESPONDA</button>"
+        }, 11000)
+    </script>
 </body>
 </html>
