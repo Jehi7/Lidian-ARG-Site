@@ -5,48 +5,51 @@
     <link href="/static/styles/fall.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,700&display=swap" rel="stylesheet">
     <title>De novo não</title>
 </head>
 <body>
     <section>
-        <form action="/">
+        <form action="/quem-e-voce" method="post" id="tv-form">
             <div class="tv-container">
                 <h2>Não me mostre aquele segundo de novo</h2>
-            </div>
 
-            <label for="channel">Canal: </label>
-            <div>
-                <input id="channel" name="channel" type="range" min="1" max="50">
-                <p id="chValue">0</p>
-            </div>
-
-            <label for="vol">Volume: </label>
-            <div>
-                <input id="vol" name="vol" type="range" min="0" max="100">
-                <p id="volValue">0</p>
+                <label for="channel">Canal: </label>
+                <div>
+                    <input id="channel" name="channel" type="range" min="1" max="50">
+                    <p id="chValue">0</p>
+                </div>
+            
+                <label for="vol">Volume: </label>
+                <div>
+                    <input id="vol" name="vol" type="range" min="0" max="100">
+                    <p id="volValue">0</p>
+                </div>
             </div>
     
-            <button class="tv-container" type="submit">Mudar canal</button>
+            <button class="tv-button" type="submit">Mudar canal</button>
         </form>
     </section>
 
+    <script src="../static/scripts/sliderHandler.js"></script>
     <script>
-        vwidth = screen.width;
-        vheight = screen.height;
+        let tvForm = document.getElementById("tv-form");
 
-        channelI = document.getElementById("channel");
-        volI = document.getElementById("vol");
+        let channelI = document.getElementById("channel");
+        let volI = document.getElementById("vol");
 
-        channelO = document.getElementById("chValue");
-        volO = document.getElementById("volValue");
+        // tvForm.addEventListener("submit", function (e) {
+        //     e.preventDefault();
 
-        channelI.addEventListener('change', function (evt) {
-            channelO.innerHTML = channelI.value;
-        });
-
-        volI.addEventListener('change', function (evt) {
-            volO.innerHTML = volI.value;
-        });
+        //     if(channelI.value == 13 && volI.value == 47) {
+        //         alert("COMO ...");
+        //     }
+        //     else {
+        //         alert(channelI.value + " " + volI.value);
+        //     }
+        // })
     </script>
 </body>
 </html>

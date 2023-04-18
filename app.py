@@ -12,3 +12,29 @@ def index():
 @app.route("/aquele-dia")
 def thatDay():
     return render_template("thatDay.html")
+
+@app.route("/quem-e-voce", methods=["GET", "POST"])
+def who():
+    if request.method == "POST":
+        channelI = request.form.get("channel")
+        volI = request.form.get("vol")
+
+        if channelI == "13" and volI == "47":
+            return render_template("who.html")
+        return redirect("/aquele-dia")
+
+@app.route("/hub", methods=["GET", "POST"])
+def hub():
+    if request.method == "POST":
+        name = request.form.get("nome").capitalize()
+
+        if name == "Carla" or name == "Maya" or name == "Sua mãe":
+            return
+        elif name == "Lidian" or name == "Rebecca" or name == "Becca" or name == "Seu pai":
+            return
+        elif name == "Carlos" or name == "Kim":
+            return
+        elif name == "Nathan" or name == "Bea" or name == "Beatrice" or name == "Seu irmão":
+            return
+        elif name == "Você":
+            return

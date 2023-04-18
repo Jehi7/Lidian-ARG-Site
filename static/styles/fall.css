@@ -24,10 +24,24 @@ form {
     border-color: #EFE9F4;
     border-style: solid;
     background-color: #08090C;
+    color: #EFE9F4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.tv-container {
+form h2 {
+    margin-bottom: .5rem;
+}
+
+button.tv-button {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 8rem;
+
     background-color: #EFE9F4;
-    border-color: #08090C;
-    color: #08090C;
+    border-style: solid;
+    border-color: #181718;
+    border-width: .5rem;
 }
